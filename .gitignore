@@ -1,0 +1,8 @@
+server/_replicator
+server/_users
+server/db
+server/pouch__all_dbs__
+server/log.txt
+node_modules
+.vagrant
+.DS_Store

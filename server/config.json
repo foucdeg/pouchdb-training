@@ -1,0 +1,8 @@
+{
+  "couchdb": {
+    "uuid": "7345434b-b164-4bea-bfe9-4c5825b99237"
+  },
+  "httpd": {
+    "bind_address": "0.0.0.0"
+  }
+}
