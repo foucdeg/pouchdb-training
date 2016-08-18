@@ -4,7 +4,7 @@ var theDoc = {};
 var localDb = new PouchDB('db');
 
 // Sync it with the remote
-var remoteDb = new PouchDB('http://' + window.location.hostname + ':5984/db');
+var remoteDb = new PouchDB('http://localhost:5984/db');
 localDb.sync(remoteDb, {live: true, retry: true});
 
 // Listen to the changes of the local database

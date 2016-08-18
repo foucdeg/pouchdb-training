@@ -1,0 +1,27 @@
+{
+  "name": "couchdb-training",
+  "version": "1.0.0",
+  "description": "CouchDB Training presented by Foucauld Degeorges at Theodo",
+  "main": "index.html",
+  "dependencies": {
+    "http-server": "^0.9.0",
+    "pouchdb": "^5.4.5",
+    "pouchdb-server": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "npm run server:start; npm run client:start",
+    "server:start": "./node_modules/pouchdb-server/bin/pouchdb-server -c ./server/config.json -d ./server &",
+    "client:start": "./node_modules/http-server/bin/http-server /var/www/couch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foucdeg/pouchdb-training.git"
+  },
+  "author": "Foucauld Degeorges",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/foucdeg/pouchdb-training/issues"
+  },
+  "homepage": "https://github.com/foucdeg/pouchdb-training#readme"
+}
