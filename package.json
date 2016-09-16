@@ -10,8 +10,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "npm run server:start; npm run client:start",
-    "server:start": "./node_modules/pouchdb-server/bin/pouchdb-server -c ./server/config.json -d ./server &",
+    "start": "npm run db:start; npm run client:start",
+    "db:start": "./node_modules/pouchdb-server/bin/pouchdb-server -c ./server/config.json -d ./server &",
     "client:start": "./node_modules/http-server/bin/http-server /var/www/couch"
   },
   "repository": {
